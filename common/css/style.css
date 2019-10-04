@@ -27,7 +27,6 @@ ul li {
 }
 
 /* テーブル */
-
 table {
     font-size: 14px;
     border: 1px solid #CCCCCC;
@@ -46,7 +45,6 @@ table caption{
 }
 
 /* 図版 */
-
 figure {
     margin: 0px;
 }
@@ -327,4 +325,3 @@ border: solid 1px #CCCCCC;
 #pageBodyMain .articleList a:hover div{
     opacity: 0.7;
 }
-    
