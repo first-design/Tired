@@ -63,7 +63,7 @@ figcaption{
   background-color: green;
   padding: 10px 20px;
   border-radius: 15%;
-  background-image: linear-gradient(to bottom, green,red);
+  background-image: linear-gradient(to bottom, green,blue);
   border: 1px solid black;
   text-align: center;
 }
