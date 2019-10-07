@@ -25,25 +25,17 @@
     </head>
 
     <body>
-        <div class="box" id="target1"></div>
-        <div class="box" id="target2"></div>
-        <div class="box" id="target3"></div>
-            <script>
-                'use strict';
+        <script>
+            'use strict';
+            
+            const div = document.createElement('div');
+            div.classList.add('box');
 
-                const target1 = document.getElementById('target1');
-                const target2 = document.getElementById('target2');
-                const target3 = document.getElementById('target3');
+            div.addEventListener('click' , () =>{
+                div.classList.toggle('circle');
+            });
 
-                target1.addEventListener('click' , () => {
-                 target1.classList.toggle('circle');       
-                 });
-                target2.addEventListener('click' , () => {
-                 target2.classList.toggle('circle');              
-                 });
-                target3.addEventListener('click' , () => {
-                 target3.classList.toggle('circle');
-                 });
+            document.body.appendChild(div);
             </script>
        
     </body>
