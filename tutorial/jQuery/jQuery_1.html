@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>practice jQuery</title>
+    </head>
+    <body>
+        <p>hello!</p>
+        <ul id="main">
+            <li>0</li>
+            <li>1</li>
+            <li class="item">2</li>
+            <li class="item">3</li>
+            <li>
+                3
+                <ul id="sub">
+                    <li>3-0</li>
+                    <li>3-1</li>
+                    <li class="item">3-2</li>
+                    <li class="item">3-3</li>
+                    <li>3-4</li>
+                </ul>
+            </li>
+        </ul>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            // $(document).ready(function(){
+            $(function() {       
+                // $("#main > .item").css('color', 'red');
+                $("#sub > li:eq(2)").css('color' , 'red');
+            });
+            
+        </script>
+
+
+    </body>
+</html>
