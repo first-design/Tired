@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptサンプル</title>
+    </head>
+    
+    <body>
+      <script>
+          
+          var title1 = "top of this page<br>";
+          var anchor1 = title1.anchor("pTop");
+          document.write(anchor1);
+
+          var url ="http://google.co.jp";
+          var text = "google".link(url) + "search!";
+          document.write(text);
+
+          for(i = 1; i<=40; i++){
+              document.write("hello<br>");
+          }
+
+          var toAnchor1 = "to top of this page".link("#pTop");
+          document.write(toAnchor1);
+        
+      </script>
+    </body>
+</html>
