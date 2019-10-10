@@ -7,22 +7,18 @@
     
     <body>
       <script>
-          
-          var title1 = "top of this page<br>";
-          var anchor1 = title1.anchor("pTop");
-          document.write(anchor1);
+          var names ;
+          names = new Array(4);
 
-          var url ="http://google.co.jp";
-          var text = "google".link(url) + "search!";
-          document.write(text);
+          names[0] = "jiro";
+          names[1] = "taro";
+          names[2] = "philip";
+          names[3] = "kosannji";
 
-          for(i = 1; i<=40; i++){
-              document.write("hello<br>");
+          for (var i = 0; i<= (names.length -1); i++){
+              document.write("hello", names[i],"<br>");
           }
-
-          var toAnchor1 = "to top of this page".link("#pTop");
-          document.write(toAnchor1);
         
       </script>
     </body>
-</html>
+  </html>
