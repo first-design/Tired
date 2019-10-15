@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptサンプル</title>
+    </head>
+    
+    <body>
+      <script>
+        function compare(a,b) {
+          return b-a;
+        }
+      </script>
+      <script>
+        var ages = new Array(4,6,10,24,1,54,78);
+        ages = ages.sort(compare);
+        document.write(ages.join(" > "));
+      </script>
+    </body>
+  </html>

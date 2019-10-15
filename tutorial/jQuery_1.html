@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>practice jQuery</title>
+        <style>
+        .myStyle {
+            border:5px solid green;
+            font-size:48px;
+        }
+            </style>
+    </head>
+    <body>
+        <p>hello!</p>
+
+        <button>add</button>
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            // $(document).ready(function(){
+                
+            $(function() {       
+                
+                $('button').click(function() {
+             var p = $('<p>').text('vanish!').addClass('vanish');
+                $(this).before(p);
+            });
+
+            $('body').on('click', '.vanish' , function() {
+                $(this).remove();
+            })
+        });
+        </script>
+
+</body>
+</html>
+<!-- // $("#main > .item").css('color', 'red');
+// $("#sub > li:eq(2)").css('color' , 'red');
+// $("#sub > li:odd(2)").css('color' , 'red');
+// $("#sub > li:contains(2)").css('color' , 'red');
+// $("#sub > li:eq(2)").siblings().css('color' , 'red');
+// $("#sub").parent().css('color' , 'red');
+// $('a[href="http://google.com"]').css('background' , 'red');
+// $('p').addClass('myStyle');
+//attr
+// console.log($('a'),data('sitename'));
+// $('p').html(.<a href="">click me!</a>);
+// $('input').val('hello, again!)');
+// $('p').text('just changed');
+
+// var li = $('<li>').text('just added');
+// $('ul > li:eq(1)').before(li);
+    
+// $('#box').toggle(800);
+// $('#box').toggle(800);
+    // $('#box').mouseover(function(){
+    //     $(this).css('background' ,'green');
+    // });
+    // $('#box').mouseout(function() {
+    //     $(this).css('background' ,'red');
+    // });
+ -->
