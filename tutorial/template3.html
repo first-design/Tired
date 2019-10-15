@@ -4,12 +4,17 @@
 	<meta charset="utf-8">
 	<title>フォームの利用</title>
 	<script>
-		function stdWeight(myform) {
+		function stdWeight(myForm) {
 			var height, weight;
 			height = Number(myForm.height.value);
-			weight = (height -100) * 0.89;
-			myForm.weight.value = weight;
+			if (myForm.sex[0].checked) {
+				weight = (height-80) * 0.7;
 			}
+			else{
+				weight = (height-70) * 0.6;
+			}
+			myForm.weight.value = weight;
+		}
 	</script>
 </head>
 
