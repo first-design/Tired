@@ -16,6 +16,33 @@
 	</style>
 
 	<script>
+		var hourBox, minBox, secBox;
+		var timer;
+
+		window.onload = init;
+		function init(){
+			hourBox = document.clockForm.hour;
+			minBox = document.clockForm.minute;
+			secBox = document.clockForm.sec;
+			dClock();
+		}
+
+		function dClock(){
+			var now = new Date() ;
+			var hour = now.getHours();
+			var min = now.getMinutes();
+			var sec = now.getSeconds();
+
+			hourBox.value = hour;
+			minBox.value = min;
+			secBox.value = sec;
+			timer = setTimeout("dClock()", 1000);
+		}
+
+			// window.onload = move;
+			// function move(){
+			// 	setTimeout("location.replace('http://google.co.jp')", 10 * 1000);
+			// }
 	</script>
 </head>
 
