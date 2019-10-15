@@ -7,18 +7,14 @@
     
     <body>
       <script>
-          var names ;
-          names = new Array(4);
-
-          names[0] = "jiro";
-          names[1] = "taro";
-          names[2] = "philip";
-          names[3] = "kosannji";
-
-          for (var i = 0; i<= (names.length -1); i++){
-              document.write("hello", names[i],"<br>");
-          }
-        
+        function compare(a,b) {
+          return b-a;
+        }
+      </script>
+      <script>
+        var ages = new Array(4,6,10,24,1,54,78);
+        ages = ages.sort(compare);
+        document.write(ages.join(" > "));
       </script>
     </body>
   </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>navigatorオブジェクト</title>
+</head>
+
+<body>
+	<script>
+		// for (var prop in navigator) {
+		// 	document.write("<p>" , prop, ":" , navigator[prop] , "</p>");
+		// }
+
+		var platform = navigator.platform;
+		if (platform.indexOf("Win") >=0) {
+			document.write("hello Windows");
+		}
+		else{
+			document.write("hello stranger");
+		}
+	</script>
+</body>
+</html>
