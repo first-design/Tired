@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>ユーザ定義オブジェクト</title>
+	<style type="text/css">
+		p {
+			font-size: 150%;
+		}
+	</style>
+	<script>
+		function Person(name, height) {
+			this.name = name;
+			this.height = height;
+		}
+	</script>	
+</head>
+
+<body>
+	<script>
+		var friends = new Array(3);
+		friends[0] = new Person("taro", 189);
+		friends[1] = new Person("suneo", 149);
+		friends[2] = new Person("horuko", 159);
+
+		for (var i=0; i<= friends.length -1; i++) {
+			document.write("<p>", friends[i].name, ":", friends[i].height, "cm</p>");
+		}
+	</script>
+</body>
+</html>
