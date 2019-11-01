@@ -88,31 +88,40 @@
 
 #Class
 
+# class User
+
+#     attr_accessor :name
+
+#     def initialize(name)
+#        @name = name 
+#     end
+
+#     def sayHi
+#         puts "Hi! #{self.name}"
+#     end
+
+# end
+
+# tom = User.new("tom")
+# tom.sayHi
+
+# bob = User.new("bob")
+# bob.sayHi
+
+# p tom.name
+
+
+#クラスメソッドの定義
+
 class User
+
+    @count = 0
 
     def initialize(name)
         @name = name
+        @@count += 1
     end
-
     def sayHi
-        puts "hi! i am #{@name}" 
+        puts "hi! #{@name}"
     end
 end
-
-tom = User.new("tom")
-tom.sayHi
-
-
-class AdminUser < User
-    #User 親クラス
-    #AdminUser こくらす
-
-    def sayHello
-        puts "Hello from #{@name}"
-    end
-
-end
-
-tom = AdminUser.new("tom")
-tom.sayHi
-tom.sayHello
